@@ -1,0 +1,9 @@
+#!/bin/bash
+# Get the current terminal width
+WIDTH=$(tput collumns)
+#let "WIDTH = WIDTH * 2"
+# Clear the screen so it's JUST RAT
+clear
+echo $WIDTH
+# Print the glorious beast
+jp2a --colors --width=$WIDTH /rat.jpeg
