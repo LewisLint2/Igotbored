@@ -41,7 +41,9 @@ try:
             
             # 1. Handle "How many" specifically
             if firstword == "how" and len(words) > 1 and words[1] in ["many", "much"]:
-                print(random.choice(how_many))
+                # This will give you numbers up to 1 quintillion
+                print(f"{random.randint(0, 10**18):,}") 
+
             
             # 2. Handle "What" context (Actions vs Objects)
             elif firstword == "what":
